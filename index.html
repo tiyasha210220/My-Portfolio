@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiyasha Sharma</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <!-----------------------------------CSS Link------------------------------>
+ 
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <!---------------------------------swiper css------------------------------>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-------------------------------Box icons--------------------------------->
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-------------------------------AOS Animations link---------------------------->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-------------------------------Google Fonts------------------------------>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!--------------------------------Header----------------------------------->
+
+    <header>
+        <ul class="navbar">
+            <li class="nav-items logo"><a href="#"><img src="img/ts_logoo.png"></a></li>
+            <li class="nav-items"> </li><li class="nav-items"> </li><li class="nav-items"></li><li class="nav-items"> </li><li class="nav-items"> </li><li class="nav-items"> </li>
+            <li class="hideOnMobile nav-items"><a href="#Home" >Home</a></li>
+            <li class="hideOnMobile nav-items"><a href="#AboutMe" >About</a></li>
+            <li class="hideOnMobile nav-items"><a href="#Education" >Education</a></li>
+            <li class="hideOnMobile nav-items"><a href="#Skills" >Skills</a></li>
+            <li class="hideOnMobile nav-items"><a href="#Certification" >Certifications</a></li>
+            <li class="hideOnMobile nav-items"><a href="#Contact" >Contact</a></li>
+            <li class="menu-button nav-items" onclick=showSidebar()><i class='bx bx-menu box'></i></li>
+        </ul>
+        <ul class="sidebar">
+            <li class="side-items" onclick=hideSidebar()><i class='bx bx-x box'></i></li>
+            <li class="side-items"><a href="#Home" >Home</a></li>
+            <li class="side-items"><a href="#AboutMe" >About</a></li>
+            <li class="side-items"><a href="#Education" >Education</a></li>
+            <li class="side-items"><a href="#Skills" >Skills</a></li>
+            <li class="side-items"><a href="#Certification" >Certifications</a></li>
+            <li class="side-items"><a href="#Contact" >Contact</a></li>
+        </ul>
+    </header>
+
+    <!--------------------------------Home-------------------------------------->
+
+    <section class="home-section" id="Home">
+        <div class="home-container">
+            <div class="image">
+                <img src="/img/home-logo-copy.png">
+            </div>
+            <div class="myself">
+                <h1 class="myself-first-line intro">Hi there</h1>
+                <h1 class="myself-second-line intro">I am Tiyasha</h1>
+                <h1 class="myself-third-line intro">Sharma</h1>
+                <p class="me" id="intro"> 
+                    <i>I am studying to design webpages on a professional basis.
+                    However, when I am not glued to my computer screen, I love to read 
+                    novels, solve jigsaws and try not to be the worst player in chess.</i>
+                </p> 
+            </div>
+        </div>
+    </section>
+
+    <!-----------------------------about me------------------------------------->
+
+    <section class="about-me-section" id="AboutMe">
+        <div class="heading">About Me</div>
+        <div class="sub-heading"><b>Hello, I am Tiyasha</b></div>
+        <p class="about-paragraph">
+            As a 4th-year undergraduate pursuing a B.Tech in Computer Science and Business Systems, 
+            I have honed my specialization in web development, mastering technologies such as HTML, 
+            CSS, and frameworks like ReactJS, Node.js, and MongoDB for backend development. My academic 
+            journey has been marked by a strong enthusiasm for continuous learning and skill enhancement. 
+            Through various projects, I have developed a deep understanding of building responsive, 
+            user-friendly web applications. My dedication to web development drives me to stay updated with 
+            the latest industry trends and best practices, ensuring that I can deliver innovative and efficient 
+            solutions. This passion makes me a committed and capable individual in the tech field, always eager 
+            to tackle new challenges and improve my expertise.
+        </p>
+    </section>
+
+    <!----------------------------Education------------------------------------->
+    
+    <section class="education" id="Education">
+        <div class="education-container">
+            <div class="heading">Education</div>
+            <div class="detail_">
+                <div class="colu1a first-column" data-aos="zoom-in-right">
+                    <h2>Bachelor's Degree</h2>
+                </div>
+                <div class="colu1b second-column" data-aos="zoom-in-left">
+                    <h2>Netaji Subhash Engineering College</h2>
+                    <h4>2021-2025</h4>
+                    <p class="institution-detail">
+                        Currently studying Computer Science And Business Systems 
+                        and developing my skills and enhancing my abilities.
+                    </p>
+                </div>
+                <div class="colu2a first-column" data-aos="zoom-in-right">
+                    <h2>High School Degree</h2>
+                </div>
+                <div class="colu2b second-column" data-aos="zoom-in-left">
+                    <h2>Chauhan Public School</h2>
+                    <h4>2020</h4>
+                    <p class="institution-detail">
+                        Achieved gold medal in maths ,silver medal in science and bronze
+                        medal in english at school level.
+                    </p>
+                </div>
+                <div class="colu3a first-column" data-aos="zoom-in-right">
+                    <h2>Elementary Education</h2>
+                </div>
+                <div class="colu3b second-column" data-aos="zoom-in-left">
+                    <h2>Holy Family School</h2>
+                    <h4>2018</h4>
+                    <p class="institution-detail">
+                        Participated in many cultural events.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------skills-------------------------------------->
+
+    <section class="skills-section" id="Skills">
+        <div class="heading">Skills</div>
+        <div class="skill-list">
+            <ol class="ordered-list">
+                <li class="skill-nav">HTML</li>
+                <li class="skill-nav">CSS</li>
+                <li class="skill-nav">JavaScript</li>
+                <li class="skill-nav">ReactJs</li>
+                <li class="skill-nav">NodeJs</li>
+                <li class="skill-nav">MS-Excel</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-------------------------------certifications----------------------------->
+
+    <section class="certification-section" id="Certification">
+        <div class="heading">Certification</div>
+        <div class="slideshow">
+            <div class="container swiper">
+                <div class="slider-wrapper">
+                    <div class="card-list swiper-wrapper">
+                        <div class="  card-item swiper-slide">
+                            <img src="./img/udemy javascript certificate.jpg" alt="User Image" class="user-image">
+                            <div class="text">Complete JavaScript with HTML5, CSS from zero to expert.</div>
+                        </div>
+                        <div class=" card-item swiper-slide">
+                            <img src="./img/vat-certificate.jpg" alt="User Image" class="user-image">
+                            <div class="text">Value Added Training on React, NodeJs and Agile</div>
+                        </div>
+                        <div class=" card-item swiper-slide">
+                            <img src="./img/udemy excel certificate.jpg" alt="User Image" class="user-image">
+                            <div class="text">Master all the MS Excel Macros and the basics of Excel VBA.</div>
+                        </div>
+                        <div class=" card-item swiper-slide">
+                            <img src="./img/udemy java certificate.jpg" alt="User Image" class="user-image">
+                            <div class="text">The complete JAVA Certification course.</div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------------contact------------------------------->
+
+    <section class="contact-section" id="Contact">
+        <div class="heading">Contact Me</div>
+        <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" 
+                    onsubmit="sendEmail(); setTimeout(function(){window.location.reload();},600);">
+                <div class="form-container">
+                    <input type="hidden" name="access_key" value="eb69d701-89af-4452-bdba-3bbba565ebd2">
+                    <div class="column">
+                        <label for="fname">
+                            First Name
+                        </label><br>
+                        <div class="fn">
+                            <input type="text" id="fname" name="firstname" placeholder="Enter your first-name" required>
+                        </div><br>
+                    </div>
+                    <div class="column">
+                        <label for="lname">
+                            Last Name
+                        </label><br>
+                        <div class="ln">
+                            <input type="text" id="lname" name="lastname" placeholder="Enter your last-name">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <label for="email">
+                            E-mail
+                        </label><br>
+                        <input type ="email" name="email" placeholder = "Enter Your Email" required id="email"><br><br>
+                    </div>
+                    <div class="column">
+                        <label for="Message">
+                            Message
+                        </label><br>
+                        <textarea name="mssg" placeholder="Enter your message here..." style="height:200px" style="width:250px" id="message"></textarea>
+                    </div>
+                </div>
+                <div class="button_for_send">
+                    <button type = "submit">Send</button>
+                    <button type = "reset">Reset</button><br><br>
+                 </div>
+            </form>
+        </div>
+    </section>
+
+    <!----------------------------------Footer-section-------------------------->
+
+    <footer>
+        <div class="footer-container">
+            <div class="logo-section">
+                <img src="./img/ts_logoo.png">
+            </div>
+            <div class="footer-navbar">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#AboutMe">About Me</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Certification">Certification</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </div>
+            <div class="detail-column linkedin">
+                <a href="https://www.linkedin.com/in/tiyasha-sharma-965983221"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <div class="detail-column mail">
+                <a href="mailto:tiyashasharma.2002@gmail.com"><i class='bx bxl-gmail' ></i></a>
+            </div>
+        </div>
+        <div class="copy">
+            <h6>&#169 ItsTiya. All rights reserved</h6>
+        </div>
+    </footer>
+
+    <!-----------------------------------AOS Animation Js link------------------>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 900,
+        });
+    </script>
+
+    <!-----------------------------------Swiper Js------------------------------>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-----------------------------------Javascript Link------------------------>
+
+    <script src="./script.js"></script>
+</body>
+</html>
